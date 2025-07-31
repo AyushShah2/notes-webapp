@@ -14,7 +14,7 @@ body,
   height: 100vh;
   overflow: hidden;
   font-size: 16px;
-  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/lightpaperfibers.png);
+  background: whitesmoke;
 }
 
 button {
@@ -28,7 +28,7 @@ button {
   color: #08c;
 }
 button:hover {
-  color: #04c;
+  color: black;
 }
 
 .App {
@@ -54,7 +54,7 @@ button:hover {
 
 .app-sidebar-notes {
   height: calc(100vh - 78px);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .app-sidebar-note {
   padding: 25px;
@@ -66,6 +66,9 @@ button:hover {
 }
 .app-sidebar-note button {
   color: crimson;
+}
+.app-sidebar-note button:hover {
+  color: black;
 }
 .app-sidebar-note p {
   margin: 10px 0;
@@ -129,7 +132,7 @@ textarea {
 /* Preview */
 .app-main-note-preview {
   border-top: 1px solid #ddd;
-  overflow-y: scroll;
+  overflow-y: auto;
   background: rgba(0, 0, 0, 0.02);
 }
 
