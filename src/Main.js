@@ -13,7 +13,7 @@ function Main({activeNote, onUpdateNote}){
 
     return <div className="app-main">
         <div className="app-main-note-edit">
-            <input type="text" id="title" value={activeNote.title === "Untitled Note" || "" ? "" : activeNote.title} onChange={(e) => onEditField("title", e.target.value)} placeholder="Untitled Note" autoFocus />
+            <input type="text" id="title" value={activeNote.title === "Untitled Note" ? "" : activeNote.title} onChange={(e) => onEditField("title", e.target.value)} placeholder="Untitled Note" autoFocus />
             <textarea id="body" value={activeNote.body} placeholder="Write your note here..." onChange={(e) => onEditField("body", e.target.value)} />
         </div>
 
